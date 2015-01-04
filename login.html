@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>CAB</title>
+
+    <body>
+        <header><a href="index.html">
+            <img class="logo" src="/img/logo.jpg" alt="airplane logo"></a>
+            <div class="main-title">
+                <span class="main-title-text">Combat Airplanes</span>
+            </div>
+        </header>
+        <div class="forms-container">
+            <div class="login-form">
+                <input id="existing-username" type="text" placeholder="Username">
+                <br><br>
+                <button onclick="login()">Login</button>
+            </div>
+            <div class="register-form">
+             <input id="phone" type="phone" placeholder="phone"><br>
+             <input id="mobile" type="phone" placeholder="mobile"><br>
+             <input id="username" type="text" placeholder="Username"><br>
+             <input id="email" type="email" placeholder="email"><br>
+             <input id="license" type="text" placeholder="license"><br>
+             <div>Date of birth</div>
+             <input id="date" type="date"><br>
+                <br><br>
+                <button onclick="register()">Register</button>
+            
+            </div>
+        </div>
+        <footer>
+            <br>
+            <span class="copyright-text">All Rights Reserved to Combat Airplanes Inc. &copy; </span>
+            <script type="text/javascript">
+                document.write(new Date().getFullYear());
+            </script>
+        </footer>
+        
+        <script src="js/login.js"></script>
+    </body>
+
+</html>
