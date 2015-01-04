@@ -1,0 +1,241 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+body {
+    background-color: #1A849B;
+}
+.logo {
+    float: left;
+    height: 100%;
+    margin-right: 50px .logo-background {
+        display: inline-block;
+        z-index: 999;
+    }
+    
+}
+.main-title {
+    font-size: 39px;
+    font-family: Impact, Charcoal, sans-serif;
+    padding-top: 80px;
+    margin: 0 20%;
+    text-align: center;
+    
+}
+.main-quote {
+    font-style: italic;
+    text-align: center;
+    font-size: 17px;
+    z-index: 1;
+    
+}
+.main-quote>cite {
+    font-style: normal;
+    font-weight: bold;
+}
+.login-welcome {
+    float: right;
+    font-size: 20px;
+}
+header {
+    background-color: rgb(26, 132, 155);
+    height: 20%;
+}
+
+.nav-bar-ul{
+font-size: 20px;    
+list-style-type: none;
+padding-top: 120px;
+padding-bottom:90px;
+position: relative;
+left: -20px
+    
+}
+
+.login-li{
+height: 70px;
+/*font-size: 20px;*/
+padding-bottom: 40px;
+padding-left: px;    
+width: 15px; 
+}
+
+.register-li{
+height: 70px;
+text-align: left;
+width: 15px;
+/*font-size: 20px;*/
+
+padding-bottom: 40px;
+}
+
+.chooseplane-li{
+width: 15px;
+height: 0px;
+/*font-size: 20px;*/
+padding-bottom: 40px;
+}
+
+.nav-bar {
+    flex: 1.5;
+    background-color: #1A849B;
+    font-size: 14px;
+}
+footer {
+    text-align: center;
+    background-color: black;
+    height: 10%;
+    font-size:20px;
+    font-weight: 500;
+    color: white;
+    
+}
+section {
+    flex: 7;
+}
+.main-page-f-16 {
+    width: 100%;
+    margin: 1px;
+    z-index: 2;
+}
+.main-wrapper {
+    display: flex;
+}
+.order-button {
+    margin: 0 40%;
+    height: 60px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.order-button:hover{
+height: 62px;
+width: 202px;
+font-size: 22px;
+border-color: green;
+} 
+
+
+/****************
+LOGIN PAGE STYLES 
+*****************/
+
+.forms-container {
+    background-color: #dfe3ee;
+    height: 420px;
+    display: flex;
+}
+.login-form {
+    flex: 3;
+}
+.register-form {
+    flex: 6;
+}
+/*************
+validtion form
+**************/
+
+.input-error {
+    border: 3px solid red;
+}
+/*************
+planes-catalog
+**************/
+
+.accordian {
+    width: 805px;
+    height: 320px;
+    overflow: hidden;
+    flex: 9;
+    /*Time for some styling*/
+    margin: 100px auto;
+/*    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);*/
+/*    -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);*/
+/*    -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);*/
+}
+/*A small hack to prevent flickering on some browsers*/
+
+.accordian ul {
+    width: 2000px;
+    /*This will give ample space to the last item to move
+	instead of falling down/flickering during hovers.*/
+}
+.accordian li {
+    position: relative;
+    display: block;
+    width: 160px;
+    float: left;
+    border-left: 1px solid #888;
+    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    /*Transitions to give animation effect*/
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    /*If you hover on the images now you should be able to 
+	see the basic accordian*/
+}
+/*Reduce with of un-hovered elements*/
+
+.accordian ul:hover li {
+    width: 40px;
+}
+/*Lets apply hover effects now*/
+
+/*The LI hover style should override the UL hover style*/
+
+.accordian ul li:hover {
+    width: 640px;
+}
+.accordian li img {
+    display: block;
+}
+/*Image title styles*/
+
+.image_title {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 640px;
+}
+.image_title a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 16px;
+}
+.plane-chosen {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    flex: 9;
+}
+/**********
+attack page
+***********/
+
+#map-canvas {
+    height: 100%;
+    margin: 0px;
+    padding: 0px
+}
+#panel {
+    position: absolute;
+    top: 125px;
+    left: 50%;
+    margin-left: -180px;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+}
+.cursor-wait * {
+    cursor: wait;
+}
