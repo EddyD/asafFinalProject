@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>CAB</title>
+</head>
+
+<body>
+           <header><a href="index.html">
+            <img class="logo" src="/img/logo.jpg" alt="airplane logo"></a>
+            <img class="logo-two" src="/img/logo-background.jpg" alt="airplane logo">
+
+            <div class="main-title">
+                <span class="main-title-text">Combat Airplanes</span>
+            </div>
+        </header>
+    <div id="panel">
+        <b>Start: </b>
+        <input type="text" id="start">
+
+        <b>End: </b>
+        <input type="text" id="end">
+        <button onclick="calcRoute();">Submit</button>
+        <div id="distance"></div>
+    </div>
+
+    <div id="map-canvas"></div>
+    <audio id="player" src="http://www.mediacollege.com/downloads/sound-effects/planes/f16-01.wav"></audio>
+    <footer>
+            <br>
+            <span class="copyright-text">All Rights Reserved to Combat Airplanes Inc. &copy; </span>
+            <script type="text/javascript">
+                document.write(new Date().getFullYear());
+            </script>
+        </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="/js/attack.js"></script>
+</body>
+
+</html>
